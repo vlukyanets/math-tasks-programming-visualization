@@ -48,6 +48,8 @@ def calculate_secret_santa_probability_taylor_series(n: int, progress: bool) -> 
     :return: Probability that somebody picked themselves in Secret Santa event with n people
     """
     # Formula is sum for each k from 0 to +inf (or to specified limit) series member (-1)^k / k!
+    # This formula will find probability P that nobody picked themselves
+    # To get the answer about 'somebody picked themselves', need return 1 - P
     f, sgn, s = 1, 1, 0
     rng = tqdm.tqdm(range(1, n + 1)) if progress else range(1, n + 1)
     for it in rng:
