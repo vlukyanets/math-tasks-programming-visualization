@@ -32,12 +32,12 @@ python secret-santa-pick-own-name-probability -n <N> -it <ITERATIONS> [-p <PRECI
 
 ### ⚙️ Arguments
 
-| Argument          | Description                                          |
-|-------------------|------------------------------------------------------|
-| -n                | Number of people in the Secret Santa event (integer) |
-| -it, --iterations | Number of Monte Carlo iterations (integer)           |
-| -p                | Number of decimal digits in output (integer)         |
-| --progress        | Enable to see progress bar                           |
+| Argument          | Description                                          | Required |
+|-------------------|------------------------------------------------------|----------|
+| -n                | Number of people in the Secret Santa event (integer) | 🟢       |
+| -it, --iterations | Number of Monte Carlo iterations (integer)           | 🟢       |
+| -p                | Number of decimal digits in output (integer)         | ⚪        |
+| --progress        | Enable to see progress bar                           | ⚪        |
 
 ### 📊 Example Commands
 
